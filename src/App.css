@@ -1,0 +1,114 @@
+@import 'https://fonts.googleapis.com/css?family=Hanken+Grotesk:wght@0,300;0,400;0,700;1,300;1,400;1,700';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: 'Hanken Grotesk';
+}
+
+:root {
+    --bg-color: #252422;
+    --accent-color: #eb5e28;
+    --card-color: #403d39;
+    --text-color: #fffcf2;
+}
+
+body {
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: grid;
+    justify-items: center;
+    background-color: var(--card-color);
+    border-radius: 10px;
+}
+
+.search-container {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.info-container {
+    justify-content: center;
+    color: var(--text-color);
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.information {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.star {
+    aspect-ratio: 1 / 1;
+    height: 25px;
+}
+
+.poster {
+    width: 180px;
+}
+
+.details {
+    display: flex;
+    gap: .5rem;
+}
+
+.genre {
+    display: flex;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+}
+
+.extra {
+    color: var(--text-color);
+    max-width: 450px;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.extra span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input {
+    width: 250px;
+    height: 35px;
+    border: none;
+    text-indent: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    width: 80px;
+    border: none;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
